@@ -1,0 +1,287 @@
+
+## `.gitignore`
+
+```gitignore
+# ------------------------------------------------------------
+# OS / Filesystem
+# ------------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+.Trashes
+.fseventsd
+.Spotlight-V100
+
+# ------------------------------------------------------------
+# Editors / IDEs
+# ------------------------------------------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Vim / Neovim
+Session.vim
+Sessionx.vim
+.netrwhist
+
+# Emacs
+\#*\#
+.\#*
+.dir-locals.el
+
+# Zed
+.zed/
+
+# ------------------------------------------------------------
+# C / C++ Build Outputs
+# ------------------------------------------------------------
+
+build/
+build-assets/
+build-*/
+cmake-build-*/
+out/
+dist/
+bin/
+obj/
+lib/
+
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.app
+
+*.pdb
+*.idb
+*.ilk
+*.exp
+
+# ------------------------------------------------------------
+# CMake
+# ------------------------------------------------------------
+
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Keep this commented if you intentionally symlink/export it for clangd.
+# compile_commands.json
+
+# ------------------------------------------------------------
+# Ninja / Make
+# ------------------------------------------------------------
+
+.ninja_deps
+.ninja_log
+*.ninja
+
+# ------------------------------------------------------------
+# clangd / LLVM Tooling
+# ------------------------------------------------------------
+
+.cache/
+.clangd/index/
+.clangd/*.idx
+
+# ------------------------------------------------------------
+# Sanitizers / Profiling / Coverage
+# ------------------------------------------------------------
+
+*.gcda
+*.gcno
+*.gcov
+coverage/
+coverage.info
+lcov.info
+
+perf.data
+perf.data.old
+callgrind.out.*
+cachegrind.out.*
+massif.out.*
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------
+# Node / pnpm Tooling Layer
+# ------------------------------------------------------------
+
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+
+# Keep lockfile committed for reproducible tooling.
+!pnpm-lock.yaml
+
+# TypeScript output
+*.tsbuildinfo
+
+# Common JS/TS build outputs
+.next/
+.nuxt/
+.svelte-kit/
+astro-dist/
+vite.svg
+coverage-final.json
+
+# ------------------------------------------------------------
+# Environment / Secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.sample
+
+*.local
+*.secret
+
+# ------------------------------------------------------------
+# Python Helper Scripts / Tooling
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------
+# Rust Helper Tooling, if ever used
+# ------------------------------------------------------------
+
+target/
+Cargo.lock
+
+# Uncomment if this repository ever contains a Rust application crate.
+# !Cargo.lock
+
+# ------------------------------------------------------------
+# Qt / GUI Build Artifacts
+# ------------------------------------------------------------
+
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+*.qmlc
+*.jsc
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# ------------------------------------------------------------
+# Generated / Temporary Project Artifacts
+# ------------------------------------------------------------
+
+tmp/
+temp/
+.cache/
+.generated/
+generated/
+
+# If generated files are intentionally versioned, add explicit negations here.
+# !generated/README.md
+
+# ------------------------------------------------------------
+# Large Local Assets
+# ------------------------------------------------------------
+
+assets-local/
+data-local/
+datasets/
+captures/
+recordings/
+
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.hevc
+*.h264
+
+# Uncomment these only if the repo should never track images.
+# *.png
+# *.jpg
+# *.jpeg
+# *.webp
+# *.tiff
+# *.heic
+
+# ------------------------------------------------------------
+# Package / Archive Outputs
+# ------------------------------------------------------------
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.AppImage
+
+# ------------------------------------------------------------
+# Local Tool State
+# ------------------------------------------------------------
+
+.local/
+.local-state/
+.tool-state/
